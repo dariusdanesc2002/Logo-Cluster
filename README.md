@@ -32,6 +32,9 @@ For every detected bounding box, I cropped the corresponding region from the ori
 My first thought was to use a pre-trained CNN model and take the output from one of the last layers as the feature vector. But since the logos, from the same category,  are very similar between them, meaning that they are only slightly resized, cropped, compressed, or a little blurry, I could use perceptual hashing. 
 I computed for every logo his perceptual hash (using `imagehash` library). Two logos are considered similar or identical when the Hamming distance is lower than a selected threshold(in this case I selected 5). To group the domains based on their logo similarity I took a dict, where the key was the first logo name which is not part of any values in the dict. The values of the dict are selected form the working PARQUET file. The result is saved in `hashFileNameToNames`.
 
+# Link to Google Colab
+https://colab.research.google.com/drive/1LI4M6cZ-G8LD9sw2QbaNKBJbNWsSWwaa?usp=sharing
+
 
 
 
