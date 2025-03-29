@@ -34,7 +34,8 @@ I computed for every logo his perceptual hash (using `imagehash` library). Two l
 
 # Link to Google Colab
 https://colab.research.google.com/drive/1LI4M6cZ-G8LD9sw2QbaNKBJbNWsSWwaa?usp=sharing
-
+# Info
+The `Logos.zip` archive contains logos extracted using the `best.pt` model.
 
 
 
