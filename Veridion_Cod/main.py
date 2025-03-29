@@ -155,7 +155,7 @@ if __name__ == "__main__":
     createGoodParquetFolder(working_df, folderPath)
     workingDF = readParquet("C:/Veridion/WorkingParquet/data.parquet")
     takeImagesFromDomain(workingDF, "C:/Veridion/Cod/Screenshots")
-    model = YOLO('C:/Veridion/Cod/Veridion_Cod/Model/best (6).pt')
+    model = YOLO('C:/Veridion/Cod/Veridion_Cod/Model/best.pt')
     logosPath = "C:/Veridion/Cod/Logos"
     takeLogoFromImages("C:/Veridion/Cod/Logos", "C:/Veridion/Cod/Screenshots", model)
     #In aceasta functie am calculat atat PerceptualHash al fiecarui logo in parte, cat si impartirea domeniilor pe baza similaritaii logourilor
